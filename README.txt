@@ -13,9 +13,3 @@ Pages:
 Discord:
 https://discord.gg/VFyjA7eXP
 
-GitHub Pages:
-Upload the contents of this folder to the repo root and keep the assets folder beside
-the HTML files. GitHub Pages -> Settings -> Pages -> Deploy from main / root.
-
-The exact IP/port, map name, and any additional server settings were not invented;
-placeholders are clearly labelled in the Server page.
