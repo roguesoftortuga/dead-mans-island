@@ -1,88 +1,76 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dead Man's Island — PvP ARK: Survival Ascended</title>
-<meta name="description" content="Dead Man's Island — PvP ARK: Survival Ascended. 2X XP, 3X Harvest, 5X Tame, 10X Breeding, No Transfers, No Mods, No Wipes, Active Admin.">
-<style>
-  :root { color-scheme: dark; }
-  html, body { margin:0; padding:0; background:#000; }
-  body { overflow-x:hidden; }
-  .page {
-    position:relative;
-    width:100%;
-    max-width:1672px;
-    margin:0 auto;
-    line-height:0;
-  }
-  .page img {
-    display:block;
-    width:100%;
-    height:auto;
-    user-select:none;
-    -webkit-user-drag:none;
-  }
-  .hotspot {
-    position:absolute;
-    display:block;
-    background:transparent;
-    cursor:pointer;
-    line-height:normal;
-    z-index:2;
-    border-radius:4px;
-  }
-  .hotspot:focus-visible {
-    outline:2px solid #fff;
-    outline-offset:2px;
-  }
-  .sr-only {
-    position:absolute;
-    width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
-    clip:rect(0,0,0,0);white-space:nowrap;border:0;
-  }
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home — Dead Man's Island</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="site-header">
+  <a class="logo" href="index.html">
+    <span class="skull">☠</span><span>DEAD MAN'S <b>ISLAND</b></span>
+  </a>
+  <button class="menu-toggle" aria-label="Open menu">☰</button>
+  <nav class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="server.html">SERVER</a>
+    <a href="rules.html">RULES</a>
+    <a href="rates.html">RATES</a>
+    <a href="settings.html">SETTINGS</a>
+    <a class="discord-link" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener">DISCORD</a>
+  </nav>
+</header>
 
-  /* Coordinates are percentages of the 1672 x 941 reference image.
-     This keeps the visual pixel-for-pixel while still scaling responsively. */
-  .nav-server { left:15.0%; top:1.0%; width:6.0%; height:4.5%; }
-  .nav-rules { left:19.2%; top:1.0%; width:5.0%; height:4.5%; }
-  .nav-rates { left:25.6%; top:1.0%; width:5.0%; height:4.5%; }
-  .nav-settings { left:31.1%; top:1.0%; width:6.2%; height:4.5%; }
-  .nav-discord { left:38.2%; top:1.0%; width:6.0%; height:4.5%; }
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">ARK: SURVIVAL ASCENDED</div>
+    <h1>DEAD MAN'S<br><span>ISLAND</span></h1>
+    <div class="sub"><b>PVP</b> • 2X XP • 3X HARVEST • 5X TAME</div>
+    <p>Build your empire. Defend your territory.<br><strong>Trust nobody.</strong></p>
+    <div class="actions"><a class="btn red" href="server.html">ENTER THE ISLAND</a><a class="btn ghost" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener">JOIN DISCORD</a></div>
+    <div class="status"><i></i> COMMUNITY SERVER • PVP • NO TRANSFERS • NO MODS • NO WIPES</div>
+  </div>
+</section>
 
-  .hero-discord { left:72.3%; top:51.0%; width:19.5%; height:7.8%; }
-  .view-server { left:5.8%; top:85.0%; width:12.7%; height:5.0%; }
-  .join-island { left:60.4%; top:85.0%; width:15.5%; height:5.0%; }
+<div class="quick-rates">
+  <div class="q"><b>2X</b><span>XP</span></div><div class="q"><b>3X</b><span>HARVEST</span></div><div class="q"><b>5X</b><span>TAME</span></div><div class="q"><b>10X</b><span>BREEDING</span></div>
+  <div class="q"><b>NO</b><span>TRANSFERS</span></div><div class="q"><b>NO</b><span>MODS</span></div><div class="q"><b>NO</b><span>WIPES</span></div><div class="q"><b>ON</b><span>ACTIVE ADMIN</span></div>
+</div>
 
-  .bottom-discord { left:0; right:0; top:94.0%; height:6.0%; }
-  @media (max-width:700px) {
-    .page { min-width:0; }
-    .hotspot { min-width:34px; }
-  }
-</style>
-</head>
-<body>
-<main class="page" aria-label="Dead Man's Island server website">
-  <img src="assets/dead-mans-island-page.png"
-       alt="Dead Man's Island PvP ARK: Survival Ascended server website."
-       width="1672" height="941">
+<section class="section"><div class="wrap">
+  <div class="section-head"><span class="num">01</span><h2>THE ISLAND AWAITS</h2></div>
+  <div class="grid3">
+    <article class="panel image-card" style="background-image:url('assets/survive.jpg')"><div class="inner"><h3>SURVIVE</h3><p>The island is beautiful. It is also trying very hard to kill you.</p><a class="link-arrow" href="server.html">SERVER INFO →</a></div></article>
+    <article class="panel image-card" style="background-image:url('assets/build.jpg')"><div class="inner"><h3>BUILD</h3><p>Claim territory. Build something worth defending.</p><a class="link-arrow" href="settings.html">SETTINGS →</a></div></article>
+    <article class="panel image-card" style="background-image:url('assets/tame.jpg')"><div class="inner"><h3>TAME</h3><p>Grow your pack, raise your dinos and dominate the map.</p><a class="link-arrow" href="rates.html">RATES →</a></div></article>
+  </div>
+</div></section>
 
-  <a class="hotspot nav-server" href="#server"><span class="sr-only">Server</span></a>
-  <a class="hotspot nav-rules" href="#rules"><span class="sr-only">Rules</span></a>
-  <a class="hotspot nav-rates" href="#rates"><span class="sr-only">Rates</span></a>
-  <a class="hotspot nav-settings" href="#settings"><span class="sr-only">Settings</span></a>
-  <a class="hotspot nav-discord" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Discord</span></a>
+<section class="darkband"><div class="section"><div class="wrap">
+  <div class="info-list">
+    <div class="info-box">
+      <div class="eyebrow">SERVER INFO</div><h3>DEAD MAN'S ISLAND — PVP</h3>
+      <div class="stat-table">
+        <div>GAME <b>ARK: SURVIVAL ASCENDED</b></div><div>TYPE <b>PVP</b></div>
+        <div>XP <b>2X</b></div><div>HARVEST <b>3X</b></div>
+        <div>TAMING <b>5X</b></div><div>BREEDING <b>10X</b></div>
+        <div>TRANSFERS <b>DISABLED</b></div><div>MODS <b>NONE</b></div>
+        <div>WIPES <b>NONE</b></div><div>ADMIN <b>ACTIVE</b></div>
+      </div>
+      <a class="link-arrow" href="server.html">VIEW FULL SERVER INFO →</a>
+    </div>
+    <div class="info-box">
+      <div class="eyebrow">THE COMMUNITY</div><h3>SURVIVE TOGETHER</h3>
+      <p>Join the Discord for announcements, tribe recruitment, server news, events and general survivor chaos.</p>
+      <a class="btn red" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener">JOIN DISCORD</a>
+    </div>
+  </div>
+</div></div></section>
 
-  <a class="hotspot hero-discord" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Join Discord</span></a>
-  <a class="hotspot view-server" href="#server"><span class="sr-only">View server info</span></a>
-  <a class="hotspot join-island" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Join the island</span></a>
+<section class="cta"><div class="wrap cta-inner"><div><div class="eyebrow">DEAD MAN'S ISLAND</div><h2>COME GET YOURS.</h2><p>There is no safe corner of the island.</p></div><a class="btn red" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener">JOIN THE COMMUNITY</a></div></section>
 
-  <a class="hotspot bottom-discord" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Discord</span></a>
-
-  <span id="server" class="sr-only">Server information</span>
-  <span id="rules" class="sr-only">Rules</span>
-  <span id="rates" class="sr-only">Rates</span>
-  <span id="settings" class="sr-only">Settings</span>
-</main>
-</body>
-</html>
+<footer class="site-footer">
+  <div><strong>DEAD MAN'S ISLAND</strong><span>PVP • 2X XP • 3X HARVEST • 5X TAME</span></div>
+  <div class="footer-center">SOME CALL IT A GAME. <b>WE CALL IT HOME.</b></div>
+  <a href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener">DISCORD.GG/VFyjA7eXP</a>
+</footer>
+<script src="site.js"></script>
+</body></html>

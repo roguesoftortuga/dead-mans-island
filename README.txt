@@ -1,22 +1,21 @@
-DEAD MAN'S ISLAND — V2
+DEAD MAN'S ISLAND — FULL WIDTH RESPONSIVE SITE
 
-Theme is based on the supplied Dead Man's Island server banner:
-- PvP
-- 2X XP
-- 3X Harvest
-- 5X Tame
-- No Transfers
-- No Mods
-- No Wipes
-- Active Admin
+This version is a real multi-page HTML/CSS/JS site rather than a single screenshot.
+It uses a full-viewport background, responsive sections, and working navigation.
 
-IMPORTANT:
-The site does not invent an IP, port, Discord invite, map, or additional server rules.
-Replace DISCORD_URL in script.js and add your exact connection details in index.html.
+Pages:
+- index.html
+- server.html
+- rules.html
+- rates.html
+- settings.html
 
-FREE HOSTING:
-Upload the folder contents to a GitHub repository and enable GitHub Pages.
-No paid hosting is required.
+Discord:
+https://discord.gg/VFyjA7eXP
 
-V3 IMAGE FIX:
-The 468x60 supplied banner is kept at its proper aspect ratio. It is no longer stretched across the full-screen hero, which was causing severe pixelation/blur. The hero now uses a crisp CSS-built dark/red survival background, while the supplied banner remains sharp in the banner strip.
+GitHub Pages:
+Upload the contents of this folder to the repo root and keep the assets folder beside
+the HTML files. GitHub Pages -> Settings -> Pages -> Deploy from main / root.
+
+The exact IP/port, map name, and any additional server settings were not invented;
+placeholders are clearly labelled in the Server page.
