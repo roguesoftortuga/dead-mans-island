@@ -4,137 +4,85 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Dead Man's Island — PvP ARK: Survival Ascended</title>
-<meta name="description" content="Dead Man's Island — PvP ARK: Survival Ascended server. 2X XP • 3X Harvest • 5X Tame • No Transfers • No Mods • No Wipes.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Dead Man's Island — PvP ARK: Survival Ascended. 2X XP, 3X Harvest, 5X Tame, 10X Breeding, No Transfers, No Mods, No Wipes, Active Admin.">
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin:0; padding:0; background:#000; }
+  body { overflow-x:hidden; }
+  .page {
+    position:relative;
+    width:100%;
+    max-width:1672px;
+    margin:0 auto;
+    line-height:0;
+  }
+  .page img {
+    display:block;
+    width:100%;
+    height:auto;
+    user-select:none;
+    -webkit-user-drag:none;
+  }
+  .hotspot {
+    position:absolute;
+    display:block;
+    background:transparent;
+    cursor:pointer;
+    line-height:normal;
+    z-index:2;
+    border-radius:4px;
+  }
+  .hotspot:focus-visible {
+    outline:2px solid #fff;
+    outline-offset:2px;
+  }
+  .sr-only {
+    position:absolute;
+    width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0;
+  }
+
+  /* Coordinates are percentages of the 1672 x 941 reference image.
+     This keeps the visual pixel-for-pixel while still scaling responsively. */
+  .nav-server { left:15.0%; top:1.0%; width:6.0%; height:4.5%; }
+  .nav-rules { left:19.2%; top:1.0%; width:5.0%; height:4.5%; }
+  .nav-rates { left:25.6%; top:1.0%; width:5.0%; height:4.5%; }
+  .nav-settings { left:31.1%; top:1.0%; width:6.2%; height:4.5%; }
+  .nav-discord { left:38.2%; top:1.0%; width:6.0%; height:4.5%; }
+
+  .hero-discord { left:72.3%; top:51.0%; width:19.5%; height:7.8%; }
+  .view-server { left:5.8%; top:85.0%; width:12.7%; height:5.0%; }
+  .join-island { left:60.4%; top:85.0%; width:15.5%; height:5.0%; }
+
+  .bottom-discord { left:0; right:0; top:94.0%; height:6.0%; }
+  @media (max-width:700px) {
+    .page { min-width:0; }
+    .hotspot { min-width:34px; }
+  }
+</style>
 </head>
 <body>
-<div class="bloodline"></div>
+<main class="page" aria-label="Dead Man's Island server website">
+  <img src="assets/dead-mans-island-page.png"
+       alt="Dead Man's Island PvP ARK: Survival Ascended server website."
+       width="1672" height="941">
 
-<header class="nav">
-  <a class="brand" href="#">
-    <span class="brand-mark">☠</span>
-    <span>DEAD MAN'S <b>ISLAND</b></span>
-  </a>
-  <nav>
-    <a href="#server">SERVER</a>
-    <a href="#rules">RULES</a>
-    <a href="#rates">RATES</a>
-    <a href="#mods">SETTINGS</a>
-    <a class="nav-btn" href="#" id="discordNav">DISCORD</a>
-  </nav>
-</header>
+  <a class="hotspot nav-server" href="#server"><span class="sr-only">Server</span></a>
+  <a class="hotspot nav-rules" href="#rules"><span class="sr-only">Rules</span></a>
+  <a class="hotspot nav-rates" href="#rates"><span class="sr-only">Rates</span></a>
+  <a class="hotspot nav-settings" href="#settings"><span class="sr-only">Settings</span></a>
+  <a class="hotspot nav-discord" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Discord</span></a>
 
-<main>
-<section class="hero">
-  <div class="hero-bg hero-bg-left"></div>
-  <div class="hero-bg hero-bg-right"></div>
-  <div class="hero-vignette"></div>
-  <div class="hero-grain"></div>
-  <div class="hero-content">
-    <div class="mini">ARK: SURVIVAL ASCENDED</div>
-    <h1>DEAD MAN'S<br><span>ISLAND</span></h1>
-    <div class="tag">PVP • 2X XP • 3X HARVEST • 5X TAME</div>
-    <p>Build your empire. Defend your territory.<br><strong>Trust nobody.</strong></p>
-    <div class="actions">
-      <a class="btn red" href="#server">ENTER THE ISLAND</a>
-      <a class="btn dark" href="#" id="discordHero">JOIN DISCORD</a>
-    </div>
-    <div class="status"><i></i> SERVER COMMUNITY <b>•</b> PVP <b>•</b> 2X / 3X / 5X</div>
-  </div>
-  <div class="side-stamp">SURVIVE<br>OR DIE</div>
-</section>
+  <a class="hotspot hero-discord" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Join Discord</span></a>
+  <a class="hotspot view-server" href="#server"><span class="sr-only">View server info</span></a>
+  <a class="hotspot join-island" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Join the island</span></a>
 
-<section class="banner-strip">
-  <img src="assets/rates-banner.jpg" alt="Dead Man's Island server banner">
-</section>
+  <a class="hotspot bottom-discord" href="https://discord.gg/VFyjA7eXP" target="_blank" rel="noopener"><span class="sr-only">Discord</span></a>
 
-<section id="server" class="section">
-  <div class="section-head"><span>01</span><h2>WELCOME TO THE ISLAND</h2></div>
-  <div class="cards">
-    <article class="card big">
-      <div class="kicker">SERVER IDENTITY</div>
-      <h3>DEAD MAN'S ISLAND — PVP</h3>
-      <p>This is a straight-up PvP survival server. Gather, tame, build and raid your way to the top — but remember that anything you build can become someone else's target.</p>
-      <div class="facts">
-        <div><small>MODE</small><b>PVP</b></div>
-        <div><small>XP</small><b>2X</b></div>
-        <div><small>HARVEST</small><b>3X</b></div>
-        <div><small>TAME</small><b>5X</b></div>
-      </div>
-    </article>
-    <article class="card">
-      <div class="kicker">CONNECT</div>
-      <h3>FIND THE SERVER</h3>
-      <p>Open the ARK server browser and search for:</p>
-      <div class="server-name"><span id="serverName">Dead Man's Island</span><button onclick="copyText('serverName')">COPY</button></div>
-      <small class="muted">Add your exact IP / port below when you're ready to publish it.</small>
-    </article>
-    <article class="card">
-      <div class="kicker">COMMUNITY</div>
-      <h3>THE PACK</h3>
-      <p>Server news, rules, announcements, player chat and everything happening on Dead Man's Island.</p>
-      <a class="arrow" href="#" id="discordCard">JOIN DISCORD →</a>
-    </article>
-  </div>
-</section>
-
-<section id="rates" class="section blood">
-  <div class="section-head"><span>02</span><h2>THE RULES OF THE ISLAND</h2></div>
-  <div class="rate-grid">
-    <div class="rate"><span>XP</span><strong>2X</strong><em>DOUBLE EXPERIENCE</em></div>
-    <div class="rate"><span>HARVEST</span><strong>3X</strong><em>TRIPLE RESOURCES</em></div>
-    <div class="rate"><span>TAME</span><strong>5X</strong><em>FIVE TIMES FASTER</em></div>
-    <div class="rate"><span>PVP</span><strong>ON</strong><em>PLAY TO WIN</em></div>
-  </div>
-</section>
-
-<section id="rules" class="section">
-  <div class="section-head"><span>03</span><h2>SERVER RULES</h2></div>
-  <div class="rule-list">
-    <div class="rule"><b>01</b><div><h3>NO CHEATING</h3><p>No hacks, exploits, dupes or anything that gives you an unfair advantage.</p></div></div>
-    <div class="rule"><b>02</b><div><h3>PVP IS PVP</h3><p>Expect to lose gear, dinos and bases. That's the point. Don't confuse competitive play with personal harassment.</p></div></div>
-    <div class="rule"><b>03</b><div><h3>DON'T BE A DICK</h3><p>Trash talk happens. Targeted harassment, threats and genuinely toxic behaviour don't.</p></div></div>
-    <div class="rule"><b>04</b><div><h3>PLAY FAIR</h3><p>Don't abuse bugs or mechanics in ways that weren't intended. If something feels broken, report it.</p></div></div>
-  </div>
-</section>
-
-<section id="showcase" class="section showcase">
-  <div class="section-head"><span>04</span><h2>THE ISLAND</h2></div>
-  <div class="visual-grid">
-    <a class="visual survive" href="#server"><img src="assets/survive.jpg" alt="Survive — Dead Man's Island"><span>SURVIVE</span></a>
-    <a class="visual build" href="#server"><img src="assets/build.jpg" alt="Build — Dead Man's Island"><span>BUILD</span></a>
-    <a class="visual tame" href="#rates"><img src="assets/tame.jpg" alt="Tame — Dead Man's Island"><span>TAME</span></a>
-    <a class="visual dominate" href="#rules"><img src="assets/dominate.jpg" alt="Dominate — Dead Man's Island"><span>DOMINATE</span></a>
-  </div>
-</section>
-
-<section id="mods" class="section dark">
-  <div class="section-head"><span>05</span><h2>SERVER SETTINGS</h2></div>
-  <div class="setting-grid">
-    <div><span>01</span><h3>NO TRANSFERS</h3><p>Characters, dinos and items stay on Dead Man's Island.</p></div>
-    <div><span>02</span><h3>NO MODS</h3><p>Keep the experience clean and recognizable.</p></div>
-    <div><span>03</span><h3>NO WIPES</h3><p>Your progress matters. Builds and empires aren't periodically erased.</p></div>
-    <div><span>04</span><h3>ACTIVE ADMIN</h3><p>Problems get looked at. Report issues through Discord.</p></div>
-  </div>
-</section>
-
-<section class="cta">
-  <div>
-    <span class="mini">DEAD MAN'S ISLAND</span>
-    <h2>COME GET YOURS.</h2>
-    <p>There is no safe corner of the island.</p>
-  </div>
-  <a class="btn red" href="#" id="discordBottom">JOIN THE COMMUNITY</a>
-</section>
+  <span id="server" class="sr-only">Server information</span>
+  <span id="rules" class="sr-only">Rules</span>
+  <span id="rates" class="sr-only">Rates</span>
+  <span id="settings" class="sr-only">Settings</span>
 </main>
-
-<footer>
-  <strong>DEAD MAN'S ISLAND</strong>
-  <span>PVP • 2X XP • 3X HARVEST • 5X TAME</span>
-</footer>
-<script src="script.js"></script>
 </body>
 </html>
